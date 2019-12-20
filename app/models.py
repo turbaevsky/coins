@@ -18,14 +18,15 @@ mindate = datetime.date(datetime.MINYEAR, 1, 1)
 class Coin(Document):
 	country = StringField(max_length=30)
 	yr = IntField()
-	nominal = IntField()
+	currency = StringField(max_length=20)
+	nominal = FloatField()
 	counter = IntField()
 	coin_type = StringField(max_length=30) # traditional coin, medal, etc
 	material = StringField(max_length=30)
 	image = ImageField(size=(350, 250, True), thumbnail_size=(30, 30, True))
 	rev = ImageField(size=(350, 250, True), thumbnail_size=(30, 30, True))
 	link = StringField()
-	estimated_price = FloatField()
+	estimated_price = StringField(max_length=20)
 	added = DateTimeField()
 	comm = StringField()
 

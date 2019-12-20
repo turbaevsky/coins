@@ -12,6 +12,7 @@ class CoinView(ModelView):
 	list_columns = [
 		"country",
 		"yr",
+		"currency",
 		"nominal",
 		"image_thumb_show",
 		#"rev_thumb_show",
@@ -23,6 +24,7 @@ class CoinView(ModelView):
 	show_columns = [
 		"country",
 		"yr",
+		"currency",
 		"nominal",
 		"coin_type",
 		"material",
