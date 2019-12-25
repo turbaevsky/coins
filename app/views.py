@@ -10,6 +10,7 @@ class CoinView(ModelView):
 	datamodel = MongoEngineInterface(Coin)
 
 	list_columns = [
+		"No",
 		"country",
 		"yr",
 		"currency",
@@ -22,6 +23,7 @@ class CoinView(ModelView):
 
 
 	show_columns = [
+		"No",
 		"country",
 		"yr",
 		"currency",

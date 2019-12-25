@@ -29,7 +29,7 @@ class Coin(Document):
 	estimated_price = StringField(max_length=20)
 	added = DateTimeField()
 	comm = StringField()
-
+	No = StringField()
 	#def month_year(self):
 	#	date = self.birthday or mindate
 	#	return datetime.datetime(date.year, date.month, 1) or mindate
